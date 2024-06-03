@@ -1,0 +1,65 @@
+
+
+.project-card {
+    width: 350px;
+    height: 500px;
+    background-color: var(--white);
+    border-radius: 20px;
+    padding: 10px;
+    color: var(--dark);
+    border: 1px solid black;
+    box-shadow: rgba(0, 0, 0, 0.4) 5px 10px 20px;
+    display: inline-block;
+    margin-right: 10px;
+    transform: scale(0.85);
+    opacity: 0.7;
+    filter: blur(3px);
+    transition: all .4s ease-in-out;
+
+
+}
+
+
+.project-card img {
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+    border-radius: 20px;
+
+}
+
+.project-card .tag {
+    font-size: 13px;
+    padding-right: 8px;
+    padding-left: 8px;
+    width: fit-content;
+    background-color: var(--light);
+    border-radius: 20px;
+    display: inline-block;
+    color: var(--white);
+    margin-left: 2px;
+    margin-top: 6px;
+
+}
+
+.project-card p {
+    height: 150px;
+    overflow-y: auto;
+}
+
+.project-card p::-webkit-scrollbar-track {
+    background: #adacac;
+    border-radius: 5px;
+}
+
+.project-card p::-webkit-scrollbar {
+    width: 5px;
+}
+
+
+.is-selected {
+    transform: scale(1);
+    opacity: 1;
+    filter: blur(0px);
+
+}

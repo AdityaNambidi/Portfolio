@@ -1,0 +1,49 @@
+.skills {
+    width: 100%;
+    height: auto;
+    position: relative;
+    margin-top: 40px;
+}
+
+.skills span {
+    color: var(--light);
+}
+
+
+.skill-box {
+    width: 70%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    padding: 10px;
+
+}
+
+.skill-box h1 {
+    text-align: center;
+}
+
+.skill-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    margin-top: 30px;
+  }
+  
+  .skill-item {
+    text-align: center;
+  }
+  
+  .skill-icon {
+    width: 70px;
+    height: 70px;
+  }
+  
+  @media (max-width: 768px) {
+    .skill-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
