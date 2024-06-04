@@ -1,9 +1,10 @@
 .projects {
     width: 100%;
     background-color: var(--dark);
-    height: 100vh;
+    height: auto;
     position: relative;
     padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 .projects h1 {
