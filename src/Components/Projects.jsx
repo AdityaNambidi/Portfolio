@@ -60,6 +60,11 @@ function Projects() {
             desc: "This was an AR learning app. It displays models using AR which can help the student learn better in a more fun manner. This project was made for the Abu Dhabi iOS app Development Competetion for which I won first place in the education category.",
             img: "./images/projects/teachar.png",
             tags: ["Swift", "Python", "MySQL","Flask", "Blender"]
+        }, {
+            title: "Skin Condition Detection App",
+            desc: "This is an ongoing machine learning project I am working on with my team where we're training a model to detect the skin condition one is facing by using CNN's trained with 1000's of labbeled images of skin conditions such as Pustules, White heads, darkspots, etc.",
+            img: "./images/projects/portfolio.png",
+            tags: ["Python", "Flutter", "AI/ML"]
         }, 
         {
             title: "Portfolio",
