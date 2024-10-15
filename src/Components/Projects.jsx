@@ -61,10 +61,10 @@ function Projects() {
             img: "./images/projects/teachar.png",
             tags: ["Swift", "Python", "MySQL","Flask", "Blender"]
         }, {
-            title: "Skin Condition Detection App",
+            title: "Acne Detection App",
             desc: "This is an ongoing machine learning project I am working on with my team where we're training a model to detect the skin condition one is facing by using CNN's trained with 1000's of labbeled images of skin conditions such as Pustules, White heads, darkspots, etc.",
-            img: "./images/projects/portfolio.png",
-            tags: ["Python", "Flutter", "AI/ML"]
+            img: "./images/projects/acne.png",
+            tags: ["Python", "Tensorflow", "Flutter", "AI/ML"]
         }, 
         {
             title: "Portfolio",
