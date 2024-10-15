@@ -46,6 +46,16 @@ function Projects() {
             img: "./images/projects/armageddon.png",
             tags: ["Unity", "C#",]
         }, {
+            title: "Electricity demand prediction",
+            desc: "In this project I collected historical weather data and electricity consumption data of Delhi from the year's 2017-2024 to train a machine learning model to predict the hourly electricity demand in Delhi to help the power sector prepare for the future electricity need, in order to help reduce power cuts.",
+            img: "./images/projects/edemand.png",
+            tags: ["AI/ML", "Python", "Tensorflow", "Sickit-Learn"]
+        }, {
+            title: "Acne Detection App",
+            desc: "This is an ongoing machine learning project I am working on with my team where we're training a model to detect the skin condition one is facing by using CNN's trained with 1000's of labbeled images of skin conditions such as Pustules, White heads, darkspots, etc.",
+            img: "./images/projects/acne.png",
+            tags: ["Python", "Tensorflow", "Flutter", "AI/ML"]
+        }, {
             title: "SeedBot 3000",
             desc: "A robot that can move around, dig a hole in the soil, plant a seed and even water it. Its goal is to reforest etc.",
             img: "./images/projects/seedbot.png",
@@ -60,11 +70,6 @@ function Projects() {
             desc: "This was an AR learning app. It displays models using AR which can help the student learn better in a more fun manner. This project was made for the Abu Dhabi iOS app Development Competetion for which I won first place in the education category.",
             img: "./images/projects/teachar.png",
             tags: ["Swift", "Python", "MySQL","Flask", "Blender"]
-        }, {
-            title: "Acne Detection App",
-            desc: "This is an ongoing machine learning project I am working on with my team where we're training a model to detect the skin condition one is facing by using CNN's trained with 1000's of labbeled images of skin conditions such as Pustules, White heads, darkspots, etc.",
-            img: "./images/projects/acne.png",
-            tags: ["Python", "Tensorflow", "Flutter", "AI/ML"]
         }, 
         {
             title: "Portfolio",
