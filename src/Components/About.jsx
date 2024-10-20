@@ -56,7 +56,7 @@ function About() {
                             <h4><span>Education</span></h4>
                             <h5>Abu Dhabi Indian School 23'</h5>
                             <p>High School</p>
-                            <h5>Delhi Technological Univercity 27'</h5>
+                            <h5>Delhi Technological University 27'</h5>
                             <p>Undergrad</p>
                         </div>
                     </Reveal>

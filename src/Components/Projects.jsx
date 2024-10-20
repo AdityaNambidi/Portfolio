@@ -41,20 +41,20 @@ function Projects() {
             tags: ["Arduino", "C", "Python", "Flask", "HTML & CSS", "JavaScript", ]
 
         }, {
-            title: "Armageddon",
-            desc: " A game where you play as a space octoupus and your goal is to devour everything. Other plants will send armys and stuff to stop you. It was made for the Major Game Jam with a team lead by me.",
-            img: "./images/projects/armageddon.png",
-            tags: ["Unity", "C#",]
-        }, {
-            title: "Electricity demand prediction",
+            title: "Energy demand prediction",
             desc: "In this project I collected historical weather data and electricity consumption data of Delhi from the year's 2017-2024 to train a machine learning model to predict the hourly electricity demand in Delhi to help the power sector prepare for the future electricity need, in order to help reduce power cuts.",
             img: "./images/projects/edemand.png",
-            tags: ["AI/ML", "Python", "Tensorflow", "Sickit-Learn"]
+            tags: ["AI/ML", "Python", "Sickit-Learn"]
         }, {
             title: "Acne Detection App",
             desc: "This is an ongoing machine learning project I am working on with my team where we're training a model to detect the skin condition one is facing by using CNN's trained with 1000's of labbeled images of skin conditions such as Pustules, White heads, darkspots, etc.",
             img: "./images/projects/acne.png",
             tags: ["Python", "Tensorflow", "Flutter", "AI/ML"]
+        }, {
+            title: "Hand-written Digit Recognition",
+            desc: "Usign and MNSIT hand written digit dataset and CNN I made a model that could detect handwritten digits with an accuracy of 99%.",
+            img: "./images/projects/digitrec.png",
+            tags: ["Tensorflow", "Python", "Pandas",]
         }, {
             title: "SeedBot 3000",
             desc: "A robot that can move around, dig a hole in the soil, plant a seed and even water it. Its goal is to reforest etc.",

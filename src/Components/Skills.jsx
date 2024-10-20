@@ -5,13 +5,13 @@ function Skills() {
 
     const skills = [
         { name: 'JavaScript', icon: 'images/logos/js.png' },
-        { name: 'HTML', icon: 'images/logos/html.png' },
-        { name: 'CSS', icon: 'images/logos/css.png' },
+        { name: 'AI/ML', icon: 'images/logos/aiml.png' },
+        { name: 'Tensorflow', icon: 'images/logos/tensorflow.png' },
         { name: 'Python', icon: 'images/logos/python.png' },
         { name: 'React', icon: 'images/logos/react.png' },
         { name: 'Arduino', icon: 'images/logos/arduino.png' },
         { name: 'Unity', icon: 'images/logos/unity.png' },
-        { name: 'C#', icon: 'images/logos/csh.png' }
+        { name: 'Pytorch', icon: 'images/logos/pytorch.png' }
     ];
 
     return (
