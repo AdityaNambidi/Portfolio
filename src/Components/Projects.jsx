@@ -35,6 +35,18 @@ function Projects() {
 
     const projs = [
         {
+            title: "MathBot",
+            desc: "A Math assistance AI that helps students by guiding them to the right answer for any math question. It can solve any math problem given to it, be it algebra, calculus, geometry, etc. It also corrects completed math homework and grades the student's work.",
+            img: "./images/projects/mathbot.png",
+            tags: ["JavaScript", "HTML", "Python", "Django", "MongoDB", ]
+        },
+        // {
+        //     title: "Dental Clinic Whatsapp Automation",
+        //     desc: "A Bot that messages the clinic's aged patients on whatsapp to remind them of their appointments and to take their medicines.",
+        //     img: "./images/projects/smartswitch.png",
+        //     tags: ["Python", "Selenium", "Twilio", "Django", "MongoDB", ]
+        // },
+        {
             title: "SmartSwitch",
             desc: "This is a smart home system I am working on called SmartSwitch. Users will be able to control all the switches and electronics in their homes through a website.",
             img: "./images/projects/smartswitch.png",
