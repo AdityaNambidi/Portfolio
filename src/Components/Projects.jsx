@@ -49,7 +49,7 @@ function Projects() {
         {
             title: "SmartSwitch",
             desc: "This is a smart home system I am working on called SmartSwitch. Users will be able to control all the switches and electronics in their homes through a website.",
-            img: "./images/projects/smartswitch.png",
+            img: "./images/projects/smartswitch3.png",
             tags: ["Arduino", "C", "Python", "Flask", "HTML & CSS", "JavaScript", ]
 
         }, {
