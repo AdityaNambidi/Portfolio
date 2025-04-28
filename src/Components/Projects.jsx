@@ -35,6 +35,12 @@ function Projects() {
 
     const projs = [
         {
+            title: "StratoBridge Lending - Chatbot Integration",
+            desc: "Integrated an AI-powered chatbot to assist users with firm information, loan rates, and personalized support. Also enabled advanced website context-awareness, allowing dynamic assistance based on user behavior and Built intelligent workflows to guide users through loan applications, proactively addressing drop-offs and form abandonment.",
+            img: "./images/projects/stratolending.png",
+            tags: ["JavaScript", "HTML", "Python", "FastAPI", "MongoDB", ]
+        },
+        {
             title: "MathBot",
             desc: "A Math assistance AI that helps students by guiding them to the right answer for any math question. It can solve any math problem given to it, be it algebra, calculus, geometry, etc. It also corrects completed math homework and grades the student's work.",
             img: "./images/projects/mathbot.png",
