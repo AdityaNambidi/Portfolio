@@ -35,7 +35,7 @@ function Projects() {
 
     const projs = [
         {
-            title: "Strato Lending Chatbot Integration",
+            title: "Strato Lending Chatbot",
             desc: "Integrated an AI-powered chatbot to assist users with firm information, loan rates, and personalized support. Also enabled advanced website context-awareness, allowing dynamic assistance based on user behavior and Built intelligent workflows to guide users through loan applications, proactively addressing drop-offs and form abandonment.",
             img: "./images/projects/stratolending.png",
             tags: ["JavaScript", "HTML", "Python", "FastAPI", "MongoDB", ]
