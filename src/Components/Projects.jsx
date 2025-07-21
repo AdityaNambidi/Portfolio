@@ -35,6 +35,12 @@ function Projects() {
 
     const projs = [
         {
+            title: "ATAM AI Agent",
+            desc: "This is a prototype of an all in one AI agent capable of doing almost any tasks by creating its own tools. It uses LangGraph for the agentic logic and created and runs its own tools using python.",
+            img: "./images/projects/atam.png",
+            tags: ["LangGraph", "LangChain", "Python", "FastAPI", "Prompt Engineering", ]
+        },
+        {
             title: "Strato Lending Chatbot",
             desc: "Integrated an AI-powered chatbot to assist users with firm information, loan rates, and personalized support. Also enabled advanced website context-awareness, allowing dynamic assistance based on user behavior and Built intelligent workflows to guide users through loan applications, proactively addressing drop-offs and form abandonment.",
             img: "./images/projects/stratolending.png",
