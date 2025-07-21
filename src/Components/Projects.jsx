@@ -47,17 +47,17 @@ function Projects() {
             tags: ["JavaScript", "HTML", "Python", "FastAPI", "MongoDB", ]
         },
         {
+            title: "SeedBot 3000",
+            desc: "This project implements a real-time 5G network monitoring solution using a Python-based agent that collects and processes network metrics, storing them in InfluxDB. I designed and integrated the Grafana dashboard layer, provisioning automated, interactive visualizations for key metrics (e.g., packet loss, bitrate) and embedding them directly into the Streamlit application.",
+            img: "./images/projects/5gagent.jpg",
+            tags: ["Grafana", "InfluxDB", "Streamlit", "Docker"]
+        }, 
+        {
             title: "MathBot",
             desc: "A Math assistance AI that helps students by guiding them to the right answer for any math question. It can solve any math problem given to it, be it algebra, calculus, geometry, etc. It also corrects completed math homework and grades the student's work.",
             img: "./images/projects/mathbot.png",
             tags: ["JavaScript", "HTML", "Python", "Django", "MongoDB", ]
         },
-        // {
-        //     title: "Dental Clinic Whatsapp Automation",
-        //     desc: "A Bot that messages the clinic's aged patients on whatsapp to remind them of their appointments and to take their medicines.",
-        //     img: "./images/projects/smartswitch.png",
-        //     tags: ["Python", "Selenium", "Twilio", "Django", "MongoDB", ]
-        // },
         {
             title: "SmartSwitch",
             desc: "This is a smart home system I am working on called SmartSwitch. Users will be able to control all the switches and electronics in their homes through a website.",
@@ -79,16 +79,6 @@ function Projects() {
             desc: "Usign and MNSIT hand written digit dataset and CNN I made a model that could detect handwritten digits with an accuracy of 99%.",
             img: "./images/projects/digitrec.png",
             tags: ["Tensorflow", "Python", "Pandas",]
-        }, {
-            title: "SeedBot 3000",
-            desc: "A robot that can move around, dig a hole in the soil, plant a seed and even water it. Its goal is to reforest etc.",
-            img: "./images/projects/seedbot.png",
-            tags: ["Arduino", "C", "Fusion 360",]
-        }, {
-            title: "CookBot",
-            desc: "Robot that cooks food using a robotic arm, is what we intended to make. This prototype however only can cook an ommelete. Robotics arm was made using 3D printed parts and servo's.",
-            img: "./images/projects/cookbot.png",
-            tags: ["Arduino", "C", "Fusion 360",]
         }, {
             title: "TeachAR",
             desc: "This was an AR learning app. It displays models using AR which can help the student learn better in a more fun manner. This project was made for the Abu Dhabi iOS app Development Competetion for which I won first place in the education category.",
