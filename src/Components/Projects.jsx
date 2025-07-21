@@ -47,7 +47,7 @@ function Projects() {
             tags: ["JavaScript", "HTML", "Python", "FastAPI", "MongoDB", ]
         },
         {
-            title: "SeedBot 3000",
+            title: "RT 5G Monitoring Dashboard",
             desc: "This project implements a real-time 5G network monitoring solution using a Python-based agent that collects and processes network metrics, storing them in InfluxDB. I designed and integrated the Grafana dashboard layer, provisioning automated, interactive visualizations for key metrics (e.g., packet loss, bitrate) and embedding them directly into the Streamlit application.",
             img: "./images/projects/5gagent.jpg",
             tags: ["Grafana", "InfluxDB", "Streamlit", "Docker"]
