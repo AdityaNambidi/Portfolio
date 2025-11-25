@@ -36,7 +36,7 @@ function Projects() {
     const projs = [
         {
             title: "Atam AI Agent",
-            desc: "This is a prototype of an all in one AI agent capable of doing almost any tasks by creating its own tools. It uses LangGraph for the agentic logic and created and runs its own tools using python.",
+            desc: "This is a prototype of an all-in-one AI agent capable of doing almost any tasks by creating its own tools. It uses LangGraph for the agentic logic and created and runs its own tools using python.",
             img: "./images/projects/atam.png",
             tags: ["LangGraph", "LangChain", "Python", "FastAPI", "Prompt Engineering", ]
         },

@@ -28,7 +28,7 @@ function About() {
 
 
                     <p>
-                        As a college student and a <span>self taught</span> programmer, I have worked on multiple projects since the start of high school.<br />With <span>4+ years</span> of experience and knowladge in multiple different languages and frameworks I have worked on projects related<br />to App development, Game development, <span>Robotics</span> and more.
+                        I'm a software developer with over four years of coding experience, specializing in Python, web development, and AI/ML. I create automation solutions, custom SaaS applications, and innovative AI-powered tools like Retrieval-Augmented Generation (RAG) systems. I help businesses streamline operations and leverage AI to achieve their goals. Let's bring your ideas to life!
                     </p>
                     <br />
                 </Reveal>
