@@ -1,32 +1,33 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import "./styles/Projects.css"
 import "./styles/ProjectCard.css"
 import Reveal from "./Reveal";
 
 
-function ProjectCard({ title, desc, img, tags, isSelected }) {
+function ProjectCard({ title, desc, img, tags, index }) {
 
     return (
-
-        <div className={"project-card " + (isSelected ? "is-selected" : "")}>
-
-
-
-            <img src={img} alt={title} />
-
-            <div className="tags">
-                {
-                    tags.map((tag, i) => (
-                        <div key={i} className="tag">{tag}</div>
-                    ))
-                }
+        <Reveal>
+            <div className="project-card" style={{ animationDelay: `${index * 0.1}s` }}>
+                <div className="project-image-container">
+                    <img src={img} alt={title} className="project-image" />
+                    <div className="project-overlay">
+                        <div className="overlay-content">
+                            <h3 className="overlay-title">{title}</h3>
+                            <p className="overlay-desc">{desc}</p>
+                            <div className="overlay-tags">
+                                {tags.map((tag, i) => (
+                                    <span key={i} className="overlay-tag">{tag}</span>
+                                ))}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className="project-info">
+                    <h3 className="project-title">{title}</h3>
+                </div>
             </div>
-
-            <h3>{title}</h3>
-            <p>{desc}</p>
-
-        </div>
-
+        </Reveal>
     )
 
 }
@@ -34,6 +35,12 @@ function ProjectCard({ title, desc, img, tags, isSelected }) {
 function Projects() {
 
     const projs = [
+        {
+            title: "Arizona Family Florist - Pricing Dashboard",
+            desc: "This is a flower pricing dashboard that manages pricing data from 200+ farms. It connects to an n8n automation that extracts data from multiple file formats (Excel, PDF, CSV, Word), stores it in MongoDB, and provides a searchable web interface with an AI chatbot for comparing prices across suppliers.",
+            img: "./images/projects/flowerautomation.png",
+            tags: ["n8n", "LangChain", "Python", "FastAPI", "MongoDB", ]
+        },
         {
             title: "Atam AI Agent",
             desc: "This is a prototype of an all-in-one AI agent capable of doing almost any tasks by creating its own tools. It uses LangGraph for the agentic logic and created and runs its own tools using python.",
@@ -85,87 +92,28 @@ function Projects() {
             img: "./images/projects/teachar.png",
             tags: ["Swift", "Python", "MySQL","Flask", "Blender"]
         }, 
-        {
-            title: "Portfolio",
-            desc: "A simple project while it may be, I designed and codded this portfolio over a couple of days using javascript, React, and CSS.",
-            img: "./images/projects/portfolio.png",
-            tags: ["JavaScript", "React", "CSS", "Flask"]
-        }, 
     ]
-
-    const [selectedIndex, setSelectedIndex] = useState(0);
-    const [sliderMargin, setSliderMargin] = useState(0);
-
-    const handleNext = () => {
-        const prevIndex = selectedIndex;
-        if (prevIndex + 1 > projs.length - 1)
-            return;
-
-        setSliderMargin(-((prevIndex + 1) * 360));
-
-
-        setSelectedIndex(selectedIndex + 1);
-    };
-
-    const handlePrevious = () => {
-        const prevIndex = selectedIndex;
-        if (prevIndex - 1 < 0)
-            return;
-
-        setSliderMargin(-((prevIndex - 1) * 360));
-
-        setSelectedIndex(selectedIndex - 1);
-    };
-
 
     return (
         <div id='projects' className="projects">
             <Reveal>
-
                 <h1>Some things <br />I've worked on<span>...</span></h1>
             </Reveal>
 
-            <Reveal>
-                <div className="slider"
-                    style={
-                        {
-                            transform: "translateX(" + sliderMargin + "px)"
-                        }
-                    }
-                >
-
-                    {
-                        projs.map((proj, i) => (
-                            // ProjectCard(proj.title, proj.desc, proj.img, proj.tags, (i===selectedIndex))
-
-                            <ProjectCard
-                                key={i}
-                                title={proj.title}
-                                desc={proj.desc}
-                                img={proj.img}
-                                tags={proj.tags}
-                                isSelected={(i === selectedIndex)}
-                            />
-                        ))
-                    }
-
-                </div>
-            </Reveal>
-
-            
-            <Reveal>
-
-                <div className="btns">
-
-                    <div className="btn nxt" onClick={handleNext} >{">"}</div>
-                    <div className="btn prev" onClick={handlePrevious} >{"<"}</div>
-                </div>
-            </Reveal>
-
+            <div className="projects-grid">
+                {projs.map((proj, i) => (
+                    <ProjectCard
+                        key={i}
+                        index={i}
+                        title={proj.title}
+                        desc={proj.desc}
+                        img={proj.img}
+                        tags={proj.tags}
+                    />
+                ))}
+            </div>
         </div>
     )
-
-
 }
 
 

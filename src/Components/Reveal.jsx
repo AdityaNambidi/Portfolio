@@ -28,7 +28,7 @@ function NavReveal ({children}) {
 function Reveal ({children}) {
 
     const ref = useRef(null);
-    const isInView = useInView(ref, {once: false});
+    const isInView = useInView(ref, {once: true});
 
     const mainControls = useAnimation();
 
@@ -37,13 +37,6 @@ function Reveal ({children}) {
             if (isInView) {
                 
                 mainControls.start("visible");
-            }
-            else {
-                if (ref.current.getBoundingClientRect().top < window.scrollY) {
-                    mainControls.start("hidden");
-                } else {
-                    mainControls.start("hidden");
-                }
             }
     }, [isInView])
 
