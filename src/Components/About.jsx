@@ -28,7 +28,16 @@ function About() {
 
 
                     <p>
-                        I'm a software developer with over four years of coding experience, specializing in Python, web development, and AI/ML. I create automation solutions, custom SaaS applications, and innovative AI-powered tools like Retrieval-Augmented Generation (RAG) systems. I help businesses streamline operations and leverage AI to achieve their goals. Let's bring your ideas to life!
+                        I build AI systems that don't just demo well - they work at scale in production. Most AI projects fail not because the model was wrong, but because the system around it wasn't thought through. I focus on the "glue" - the workflows, the edge cases, and the handoffs - that turn a generic LLM into a high-ROI business asset.
+
+                    <br />
+What I bring to your business:
+
+                    <br />
+→ Agentic Orchestration: Developing autonomous agents for network management and email parsing (handling 5,000+ monthly volume).<br />
+→ RAG Document Intelligence: Architecting custom retrieval systems that make your proprietary data actionable and accurate.<br />
+→ Workflow Engineering: Expert-level n8n and LangGraph developer creating self-healing loops and automated SEO pipelines.<br />
+→ Recent Milestone: Part of the core dev team for a major Fintech platform launch (April 1,2026). Responsible for the AI-driven data ingestion and real-time analysis layers.
                     </p>
                     <br />
                 </Reveal>
