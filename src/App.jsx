@@ -1,35 +1,39 @@
 import './App.css';
-import { Home } from './Components/Home';
-import NavBar from './Components/NavBar';
-import About from './Components/About';
-import Projects from './Components/Projects';
-import Contact from './Components/Contact';
+import { useReveal } from './hooks/useReveal';
+import { useCountUp } from './hooks/useCountUp';
+import { useScrollEngine } from './hooks/useScrollEngine';
+import { useCustomCursor, useMagnetic } from './hooks/useCursor';
 
-function App() {
+import CustomCursor from './components/CustomCursor';
+import NavBar from './components/NavBar';
+import Hero from './components/Hero';
+import Marquee from './components/Marquee';
+import Services from './components/Services';
+import Process from './components/Process';
+import Projects from './components/Projects';
+import Metrics from './components/Metrics';
+import About from './components/About';
+import Contact from './components/Contact';
 
-    // smoothScroll();
+export default function App() {
+  useReveal();
+  useCountUp();
+  useScrollEngine();
+  useCustomCursor();
+  useMagnetic();
 
-    return (
-        <div>            
-
-            <NavBar />
-
-            <div className="sections">
-
-            
-                <Home />
-
-                <About />
-
-                <Projects />
-
-                <Contact />
-
-            </div>
-
-        </div>
-
-    );
+  return (
+    <div className="app-root">
+      <CustomCursor />
+      <NavBar />
+      <Hero />
+      <Marquee />
+      <About />
+      <Process />
+      <Projects />
+      <Metrics />
+      <Services />
+      <Contact />
+    </div>
+  );
 }
-
-export default App;

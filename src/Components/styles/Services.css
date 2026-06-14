@@ -1,0 +1,211 @@
+/* ══════════════════════════════════════════════════════
+   Services — sticky scatter→assemble horizontal strips
+══════════════════════════════════════════════════════ */
+
+/* ── Section ──────────────────────────────────────────── */
+.services-section {
+  padding: 100px 0 80px;
+  background: var(--bg);
+  overflow: hidden;        /* clips scattered strips before assembly */
+}
+
+.services-inner {
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 0 34px;
+  width: 100%;
+  position: relative;
+}
+
+/* ── Header ───────────────────────────────────────────── */
+.services-head {
+  margin-bottom: 28px;
+  will-change: opacity, transform;
+}
+
+.services-section-title {
+  font-size: clamp(28px, 4.8vw, 68px);
+  margin: 4px 0 0;
+}
+
+
+/* ── Strip list ───────────────────────────────────────── */
+.svc-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+/* ── Individual strip ─────────────────────────────────── */
+.svc-strip {
+  display: grid;
+  grid-template-columns: 52px 1fr 120px 100px;
+  gap: 0 28px;
+  align-items: center;
+  padding: 18px 24px;
+  border-top: 1px solid var(--line);
+  will-change: transform, opacity;
+  position: relative;
+  background: var(--bg);
+}
+
+/* Last strip gets a bottom border too */
+.svc-strip:last-child {
+  border-bottom: 1px solid var(--line);
+}
+
+/* Hover: accent left bar */
+.svc-strip::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: var(--accent);
+  transform: scaleY(0);
+  transform-origin: bottom;
+  transition: transform 0.4s cubic-bezier(0.16, 0.8, 0.3, 1);
+  border-radius: 1px;
+}
+
+.svc-strip:hover::before {
+  transform: scaleY(1);
+}
+
+/* ── Left: number ─────────────────────────────────────── */
+.svc-strip-num {
+  font-family: 'Martian Mono', monospace;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  color: var(--accent);
+  align-self: start;
+  padding-top: 3px;
+}
+
+/* ── Centre-left: type + title + desc ────────────────── */
+.svc-strip-body {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.svc-strip-type {
+  font-family: 'Martian Mono', monospace;
+  font-size: 9px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.svc-strip-title {
+  margin: 0;
+  font-family: 'Archivo', sans-serif;
+  font-weight: 900;
+  font-variation-settings: 'wdth' 80;
+  font-size: clamp(18px, 1.9vw, 26px);
+  line-height: 1;
+  letter-spacing: -0.02em;
+  color: var(--ink);
+}
+
+.svc-strip-desc {
+  margin: 6px 0 0;
+  font-size: 13px;
+  line-height: 1.55;
+  color: var(--muted);
+  max-width: 56ch;
+}
+
+/* ── Centre-right: impact metric ─────────────────────── */
+.svc-strip-metric {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 2px;
+  text-align: right;
+}
+
+.svc-strip-metric-val {
+  font-family: 'Archivo', sans-serif;
+  font-weight: 900;
+  font-variation-settings: 'wdth' 70;
+  font-size: clamp(26px, 3vw, 42px);
+  line-height: 0.9;
+  letter-spacing: -0.03em;
+  color: var(--accent);
+}
+
+.svc-strip-metric-label {
+  font-family: 'Martian Mono', monospace;
+  font-size: 9px;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+/* ── Right: timeline + arrow ──────────────────────────── */
+.svc-strip-meta {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 6px;
+}
+
+.svc-strip-timeline {
+  font-family: 'Martian Mono', monospace;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  color: var(--muted);
+  border: 1px solid var(--line);
+  padding: 4px 8px;
+  border-radius: 100px;
+  white-space: nowrap;
+}
+
+.svc-strip-arrow {
+  font-family: 'Martian Mono', monospace;
+  font-size: 13px;
+  color: var(--muted);
+  transition: color 0.25s ease, transform 0.25s ease;
+}
+
+.svc-strip:hover .svc-strip-arrow {
+  color: var(--accent);
+  transform: translateX(4px);
+}
+
+/* ── Responsive ───────────────────────────────────────── */
+@media (max-width: 960px) {
+  .svc-strip {
+    grid-template-columns: 44px 1fr 90px;
+  }
+  .svc-strip-meta {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .services-section {
+    padding: 60px 0 50px;
+  }
+
+  .services-inner {
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: 700px) {
+  .svc-strip {
+    grid-template-columns: 36px 1fr;
+    padding: 18px 4px;
+  }
+  .svc-strip-metric {
+    display: none;
+  }
+}
+

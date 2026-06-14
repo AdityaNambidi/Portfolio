@@ -1,0 +1,35 @@
+.thh-wrap {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.thh-svg {
+  width: 100%;
+  height: auto;
+  overflow: visible;
+  cursor: crosshair;
+  display: block;
+  user-select: none;
+}
+
+.thh-text {
+  font-family: 'Archivo', sans-serif;
+  font-weight: 900;
+  font-size: 82px;
+  letter-spacing: -0.02em;
+}
+
+@keyframes thh-draw {
+  0%   { stroke-dashoffset: 2000; opacity: 0; }
+  8%   { opacity: 1; }
+  100% { stroke-dashoffset: 0; opacity: 0.55; }
+}
+
+.thh-wrap--touch .thh-text {
+  font-size: 96px;
+}
+
+.thh-wrap--touch .thh-svg {
+  cursor: default;
+  pointer-events: none;
+}

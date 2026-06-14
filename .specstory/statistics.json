@@ -1,0 +1,58 @@
+{
+  "sessions": {
+    "33edbbd7-8c22-4409-b98a-0e76d0b01dff": {
+      "user_message_count": 14,
+      "agent_message_count": 207,
+      "start_timestamp": "2026-06-13T22:32:21+05:30",
+      "end_timestamp": "2026-06-13T22:32:21+05:30",
+      "markdown_size_bytes": 161276,
+      "provider": "cursoride",
+      "last_updated": "2026-06-14T16:08:12Z"
+    },
+    "4e3e296c-a460-4449-85ec-6cd7dbef1026": {
+      "user_message_count": 1,
+      "agent_message_count": 19,
+      "start_timestamp": "2026-06-13T21:19:10+05:30",
+      "end_timestamp": "2026-06-13T21:19:10+05:30",
+      "markdown_size_bytes": 12155,
+      "provider": "cursoride",
+      "last_updated": "2026-06-13T15:50:40Z"
+    },
+    "7f28725b-076b-4327-8972-5a1e925b6c47": {
+      "user_message_count": 16,
+      "agent_message_count": 310,
+      "start_timestamp": "2026-06-13T21:06:53+05:30",
+      "end_timestamp": "2026-06-13T21:06:53+05:30",
+      "markdown_size_bytes": 214554,
+      "provider": "cursoride",
+      "last_updated": "2026-06-13T17:00:05Z"
+    },
+    "a07cec9a-76d0-4751-a032-e2393c68cf8f": {
+      "user_message_count": 9,
+      "agent_message_count": 160,
+      "start_timestamp": "2026-06-13T22:58:00+05:30",
+      "end_timestamp": "2026-06-13T22:58:00+05:30",
+      "markdown_size_bytes": 105599,
+      "provider": "cursoride",
+      "last_updated": "2026-06-14T11:50:12Z"
+    },
+    "bca65734-c87c-45e3-9ac4-8b6d4196c829": {
+      "user_message_count": 8,
+      "agent_message_count": 82,
+      "start_timestamp": "2026-06-13T23:06:42+05:30",
+      "end_timestamp": "2026-06-13T23:06:42+05:30",
+      "markdown_size_bytes": 50250,
+      "provider": "cursoride",
+      "last_updated": "2026-06-14T15:15:23Z"
+    },
+    "cd1e987b-f0fa-40cf-90a5-54d45df805ee": {
+      "user_message_count": 3,
+      "agent_message_count": 44,
+      "start_timestamp": "2026-01-21T01:37:45+05:30",
+      "end_timestamp": "2026-01-21T01:37:45+05:30",
+      "markdown_size_bytes": 47099,
+      "provider": "cursoride",
+      "last_updated": "2026-06-14T11:50:12Z"
+    }
+  }
+}

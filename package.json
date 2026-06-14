@@ -10,10 +10,12 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@formspree/react": "^2.5.1",
     "@react-three/drei": "^9.106.0",
     "@react-three/fiber": "^8.16.6",
     "framer-motion": "^11.2.10",
     "jsdom-global": "^3.0.2",
+    "lenis": "^1.1.18",
     "locomotive-scroll": "^4.1.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",

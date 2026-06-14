@@ -1,0 +1,90 @@
+
+
+.about {
+    height: auto;
+    background-color: var(--dark);
+    position: relative;
+    width: 100%;
+    padding-top: 120px;
+    padding-bottom: 95px;
+}
+
+.about .grad {
+    position: absolute;
+    top: 0px;
+    z-index: 2;
+    width: 100%;
+    height: 100px;
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(34,40,49,1) 100%);
+}
+
+
+.about-title {
+    position: relative;
+    margin-left: 10%;
+    z-index: 5;
+    
+}
+
+.about-title span {
+    color: var(--light);
+}
+
+
+.about h1 {
+    font-weight: 500;
+}
+
+.skill-box h1 {
+    text-align: center;
+}
+
+.info span {
+    color: #F05454;
+}
+
+
+.about .info {
+    position: relative;
+    margin-top: 20px;
+    padding-left: 10%;
+    padding-right: 15%;
+    z-index: 5;
+    
+    
+}
+
+.info .container {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 30px;
+}
+
+.info h5 {
+    font-size: 18px;
+}
+
+.info .edu {
+    width: fit-content;
+    /* margin-top: -100px; */
+}
+
+.info .edu p {
+    margin-left: 20px;
+}
+
+
+@media (max-width: 768px) {
+    .info .container {
+        grid-template-columns: 1fr;
+    }
+    
+    .info .awards {
+        margin-left: 0;
+    }
+
+    .info .edu {
+        margin-left: 0;
+    }
+}

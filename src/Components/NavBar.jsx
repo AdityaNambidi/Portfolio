@@ -1,48 +1,54 @@
-// src/Navbar.js
-import React, { useEffect, useState } from 'react';
-import './styles/Navbar.css';
-import {NavReveal} from "./Reveal"
+import { useState } from 'react';
+import { navLinks } from '../data/content';
+import './styles/NavBar.css';
 
-const NavBar = () => {
-    const [isMenuOpen, setIsMenuOpen] = useState(false);
-    const [activeLink, setActiveLink] = useState("home");
-    const [scrolled, setScrolled] = useState(false);
+export default function NavBar() {
+  const [menuOpen, setMenuOpen] = useState(false);
 
-    useEffect(() => {
-        const onScroll = () => {
-            if (window.scrollY > 50) 
-                setScrolled(true);
-            else
-                setScrolled(false);
-        };
+  const closeMenu = () => setMenuOpen(false);
 
-        window.addEventListener("scroll", onScroll);
-        return () => window.removeEventListener("scroll", onScroll);
-
-    })
-
-    const toggleMenu = () => {
-        setIsMenuOpen(!isMenuOpen);
-    };
-
-    return (
-        <NavReveal>
-        <nav className={"navbar " + (scrolled ? "scrolled": "")}>
-            
-            <div className="navbar-logo">AN<span>.</span></div>
-            <button className="menu-button" onClick={toggleMenu}>
-                &#9776; {/* Unicode character for the hamburger menu */}
+  return (
+    <>
+      <nav className="nav" data-nav>
+        <div className="nav-inner section-inner">
+          <a href="#top" className="nav-logo" data-magnetic onClick={closeMenu}>
+            <span className="nav-logo-mark">✳</span>
+            <span className="nav-logo-text">Aditya Nambidi</span>
+          </a>
+          <div className="nav-right">
+            <div className="nav-links">
+              {navLinks.map((link) => (
+                <a key={link.href} href={link.href}>{link.label}</a>
+              ))}
+            </div>
+            <a href="#contact" className="nav-cta" data-magnetic>
+              Book a call
+              <span className="nav-cta-dot" />
+            </a>
+            <button
+              className={`nav-hamburger${menuOpen ? ' is-open' : ''}`}
+              onClick={() => setMenuOpen(!menuOpen)}
+              aria-label={menuOpen ? 'Close menu' : 'Open menu'}
+            >
+              <span />
+              <span />
+              <span />
             </button>
-            <ul className={`navbar-links ${isMenuOpen ? 'open' : ''}`}>
-                <li className={ activeLink === 'home' ? 'active' : ""} ><a onClick={ () => { setActiveLink("home"); toggleMenu(); } } href="#home">Home</a></li>
-                
-                <li className={ activeLink === 'about' ? 'active' : ""} ><a onClick={ () => { setActiveLink("about"); toggleMenu(); } } href="#aboutme">About me</a></li>
-                <li className={ activeLink === 'projects' ? 'active' : ""} ><a onClick={ () => { setActiveLink("projects"); toggleMenu(); } } href="#projects">Projects</a></li>
-                <li className={ activeLink === 'contact' ? 'active' : ""} ><a onClick={ () => { setActiveLink("contact"); toggleMenu(); } } href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-        </NavReveal>
-    );
-};
+          </div>
+        </div>
+      </nav>
 
-export default NavBar;
+      <div className={`nav-mobile-menu${menuOpen ? ' is-open' : ''}`} aria-hidden={!menuOpen}>
+        {navLinks.map((link) => (
+          <a key={link.href} href={link.href} onClick={closeMenu}>
+            {link.label}
+          </a>
+        ))}
+        <a href="#contact" className="nav-mobile-cta" onClick={closeMenu}>
+          Book a call
+          <span className="nav-cta-dot" />
+        </a>
+      </div>
+    </>
+  );
+}

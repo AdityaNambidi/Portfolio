@@ -1,0 +1,13 @@
+.contact-shader {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  opacity: 0.08;
+  pointer-events: none;
+  border-radius: inherit;
+}
+
+.contact-shader canvas {
+  width: 100% !important;
+  height: 100% !important;
+}
